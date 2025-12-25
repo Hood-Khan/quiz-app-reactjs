@@ -1,0 +1,444 @@
+[
+    {
+        "id": 1,
+        "title": "What is HTML?",
+        "options": [
+            "A programming language",
+            "A markup language for creating web pages",
+            "A database management system",
+            "A styling language for web pages"
+        ],
+        "correct_option": 1
+    },
+    {
+        "id": 2,
+        "title": "What does HTML stand for?",
+        "options": [
+            "Hyper Text Markup Language",
+            "High Text Machine Language",
+            "Hyperlinks and Text Markup Language",
+            "Home Tool Markup Language"
+        ],
+        "correct_option": 0
+    },
+    {
+        "id": 3,
+        "title": "Which tag is used to create a paragraph in HTML?",
+        "options": [
+            "<div>",
+            "<p>",
+            "<span>",
+            "<paragraph>"
+        ],
+        "correct_option": 1
+    },
+    {
+        "id": 4,
+        "title": "Which HTML tag is used for the largest heading?",
+        "options": [
+            "<h6>",
+            "<heading>",
+            "<h1>",
+            "<head>"
+        ],
+        "correct_option": 2
+    },
+    {
+        "id": 5,
+        "title": "Which tag is used to insert an image?",
+        "options": [
+            "<image>",
+            "<img>",
+            "<src>",
+            "<pic>"
+        ],
+        "correct_option": 1
+    },
+    {
+        "id": 6,
+        "title": "Which attribute specifies the image path?",
+        "options": [
+            "href",
+            "link",
+            "src",
+            "path"
+        ],
+        "correct_option": 2
+    },
+    {
+        "id": 7,
+        "title": "Which tag is used to create a hyperlink?",
+        "options": [
+            "<a>",
+            "<link>",
+            "<href>",
+            "<url>"
+        ],
+        "correct_option": 0
+    },
+    {
+        "id": 8,
+        "title": "Which tag creates a line break?",
+        "options": [
+            "<lb>",
+            "<break>",
+            "<br>",
+            "<hr>"
+        ],
+        "correct_option": 2
+    },
+    {
+        "id": 9,
+        "title": "Which tag is used to display a horizontal line?",
+        "options": [
+            "<line>",
+            "<br>",
+            "<hr>",
+            "<border>"
+        ],
+        "correct_option": 2
+    },
+    {
+        "id": 10,
+        "title": "Which tag is used to create an unordered list?",
+        "options": [
+            "<ol>",
+            "<ul>",
+            "<li>",
+            "<list>"
+        ],
+        "correct_option": 1
+    },
+    {
+        "id": 11,
+        "title": "Which tag is used to create a list item?",
+        "options": [
+            "<ul>",
+            "<li>",
+            "<ol>",
+            "<item>"
+        ],
+        "correct_option": 1
+    },
+    {
+        "id": 12,
+        "title": "Which HTML tag is used to make text bold?",
+        "options": [
+            "<bold>",
+            "<b>",
+            "<stronger>",
+            "<text-bold>"
+        ],
+        "correct_option": 1
+    },
+    {
+        "id": 13,
+        "title": "Which tag is used to italicize text?",
+        "options": [
+            "<italic>",
+            "<i>",
+            "<em>",
+            "<it>"
+        ],
+        "correct_option": 1
+    },
+    {
+        "id": 14,
+        "title": "Which tag is used to create a table?",
+        "options": [
+            "<tab>",
+            "<table>",
+            "<tr>",
+            "<td>"
+        ],
+        "correct_option": 1
+    },
+    {
+        "id": 15,
+        "title": "Which tag defines a table row?",
+        "options": [
+            "<td>",
+            "<th>",
+            "<tr>",
+            "<row>"
+        ],
+        "correct_option": 2
+    },
+    {
+        "id": 16,
+        "title": "Which tag defines a table cell?",
+        "options": [
+            "<cell>",
+            "<td>",
+            "<tr>",
+            "<th>"
+        ],
+        "correct_option": 1
+    },
+    {
+        "id": 17,
+        "title": "Which tag is used to create a form?",
+        "options": [
+            "<input>",
+            "<form>",
+            "<fieldset>",
+            "<button>"
+        ],
+        "correct_option": 1
+    },
+    {
+        "id": 18,
+        "title": "Which input type is used for passwords?",
+        "options": [
+            "text",
+            "hidden",
+            "password",
+            "secure"
+        ],
+        "correct_option": 2
+    },
+    {
+        "id": 19,
+        "title": "Which tag is used to add a checkbox?",
+        "options": [
+            "input type='check'",
+            "input type='box'",
+            "input type='checkbox'",
+            "checkbox"
+        ],
+        "correct_option": 2
+    },
+    {
+        "id": 20,
+        "title": "Which tag is used to define the HTML document?",
+        "options": [
+            "<body>",
+            "<head>",
+            "<html>",
+            "<doc>"
+        ],
+        "correct_option": 2
+    },
+
+    {
+        "id": 21,
+        "title": "What does CSS stand for?",
+        "options": [
+            "Computer Style Sheets",
+            "Creative Style System",
+            "Cascading Style Sheets",
+            "Colorful Style Sheets"
+        ],
+        "correct_option": 2
+    },
+    {
+        "id": 22,
+        "title": "Which property is used to change text color?",
+        "options": [
+            "font-color",
+            "text-color",
+            "color",
+            "fgcolor"
+        ],
+        "correct_option": 2
+    },
+    {
+        "id": 23,
+        "title": "Which CSS property controls text size?",
+        "options": [
+            "text-style",
+            "font-size",
+            "text-size",
+            "font-style"
+        ],
+        "correct_option": 1
+    },
+    {
+        "id": 24,
+        "title": "Which symbol is used for class selector?",
+        "options": [
+            "#",
+            ".",
+            "*",
+            "@"
+        ],
+        "correct_option": 1
+    },
+    {
+        "id": 25,
+        "title": "Which symbol is used for ID selector?",
+        "options": [
+            ".",
+            "#",
+            "*",
+            "%"
+        ],
+        "correct_option": 1
+    },
+    {
+        "id": 26,
+        "title": "Which property adds space inside an element?",
+        "options": [
+            "margin",
+            "border",
+            "padding",
+            "spacing"
+        ],
+        "correct_option": 2
+    },
+    {
+        "id": 27,
+        "title": "Which property adds space outside an element?",
+        "options": [
+            "padding",
+            "margin",
+            "border",
+            "outline"
+        ],
+        "correct_option": 1
+    },
+    {
+        "id": 28,
+        "title": "Which CSS property makes text bold?",
+        "options": [
+            "font-style",
+            "font-weight",
+            "text-bold",
+            "bold"
+        ],
+        "correct_option": 1
+    },
+    {
+        "id": 29,
+        "title": "Which property is used to change background color?",
+        "options": [
+            "bgcolor",
+            "background-color",
+            "color",
+            "background"
+        ],
+        "correct_option": 1
+    },
+    {
+        "id": 30,
+        "title": "Which display value hides an element?",
+        "options": [
+            "none",
+            "hidden",
+            "block",
+            "invisible"
+        ],
+        "correct_option": 0
+    },
+
+    {
+        "id": 31,
+        "title": "What is JavaScript?",
+        "options": [
+            "A database language",
+            "A styling language",
+            "A scripting language for web pages",
+            "A markup language"
+        ],
+        "correct_option": 2
+    },
+    {
+        "id": 32,
+        "title": "Which keyword is used to declare a variable?",
+        "options": [
+            "var",
+            "int",
+            "string",
+            "define"
+        ],
+        "correct_option": 0
+    },
+    {
+        "id": 33,
+        "title": "Which symbol is used for comments?",
+        "options": [
+            "<!-- -->",
+            "//",
+            "#",
+            "**"
+        ],
+        "correct_option": 1
+    },
+    {
+        "id": 34,
+        "title": "Which function displays output in console?",
+        "options": [
+            "print()",
+            "console.log()",
+            "echo()",
+            "alert()"
+        ],
+        "correct_option": 1
+    },
+    {
+        "id": 35,
+        "title": "Which keyword is used for constant variables?",
+        "options": [
+            "var",
+            "let",
+            "const",
+            "static"
+        ],
+        "correct_option": 2
+    },
+    {
+        "id": 36,
+        "title": "Which operator is used for equality check?",
+        "options": [
+            "=",
+            "==",
+            "!=",
+            "<>"
+        ],
+        "correct_option": 1
+    },
+    {
+        "id": 37,
+        "title": "Which data type stores true or false?",
+        "options": [
+            "String",
+            "Boolean",
+            "Number",
+            "Object"
+        ],
+        "correct_option": 1
+    },
+    {
+        "id": 38,
+        "title": "Which function shows a popup message?",
+        "options": [
+            "prompt()",
+            "console.log()",
+            "alert()",
+            "message()"
+        ],
+        "correct_option": 2
+    },
+    {
+        "id": 39,
+        "title": "Which loop runs at least once?",
+        "options": [
+            "for",
+            "while",
+            "do-while",
+            "foreach"
+        ],
+        "correct_option": 2
+    },
+    {
+        "id": 40,
+        "title": "Which keyword is used to define a function?",
+        "options": [
+            "func",
+            "function",
+            "define",
+            "method"
+        ],
+        "correct_option": 1
+    }
+]
