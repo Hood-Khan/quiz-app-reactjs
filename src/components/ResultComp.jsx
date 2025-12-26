@@ -1,6 +1,9 @@
 import React from 'react'
 
-function ResultComp() {
+function ResultComp({showScreen,setShowScreen}) {
+
+  
+
   return (
     <div className="w-full bg-white/30 backdrop-blur-lg 
                     border border-white/40 rounded-2xl shadow-xl 

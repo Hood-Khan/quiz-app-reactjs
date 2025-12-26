@@ -1,6 +1,9 @@
 import React from 'react'
 
-function WelcomeComp() {
+function WelcomeComp({showScreen,setShowScreen}) {
+
+
+
   return (
     <div className="w-full bg-white/30 backdrop-blur-lg border border-white/40 
                     rounded-2xl shadow-xl py-14 px-6 my-20">
@@ -18,7 +21,8 @@ function WelcomeComp() {
 
         <button className="px-8 py-3 bg-green-600 hover:bg-green-700 
                            text-white font-semibold rounded-full 
-                           transition duration-300 shadow-lg">
+                           transition duration-300 shadow-lg"
+                           onClick={()=>setShowScreen('quiz')}>
           Get Started
         </button>
       </div>
