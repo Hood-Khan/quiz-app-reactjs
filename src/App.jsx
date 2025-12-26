@@ -20,11 +20,11 @@ function App() {
         </div>
 
         <div className="w-full">
-          {showScreen=='quiz' && <QuizComp />}
+          {showScreen=='quiz' && <QuizComp {...{showScreen,setShowScreen}} />}
         </div>
 
         <div className="w-full">
-          {showScreen=='result' && <ResultComp />}
+          {showScreen=='result' && <ResultComp {...{showScreen,setShowScreen}} />}
         </div>
 
       </div>

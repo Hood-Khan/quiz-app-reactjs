@@ -2,7 +2,7 @@ import React from 'react'
 
 function ResultComp({showScreen,setShowScreen}) {
 
-  
+
 
   return (
     <div className="w-full bg-white/30 backdrop-blur-lg 
@@ -27,7 +27,9 @@ function ResultComp({showScreen,setShowScreen}) {
           </div>
         </div>
 
-        <button className="px-10 py-3 bg-green-600 hover:bg-green-700 
+        <button 
+        onClick={()=>setShowScreen('welcome')}
+        className="px-10 py-3 bg-green-600 hover:bg-green-700 
                            text-white font-semibold rounded-full 
                            transition shadow-lg">
           Restart Quiz

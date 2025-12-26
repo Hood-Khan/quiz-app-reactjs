@@ -1,19 +1,18 @@
-import React, { useState } from 'react'
-import quiz from '../api/quiz.json'
+import React, { useState } from "react";
+import quiz from "../api/quiz.json";
 
-function QuizComp() {
+function QuizComp({showScreen,setShowScreen}) {
+  const [index, setIndex] = useState(0);
 
-  const [index,setIndex] = useState(0)
-
-  const question = quiz[index]
+  const question = quiz[index];
 
   return (
-    <div className="w-full bg-white/30 backdrop-blur-lg 
+    <div
+      className="w-full bg-white/30 backdrop-blur-lg 
                     border border-white/40 rounded-2xl shadow-xl 
-                    p-6 sm:p-10 my-10">
-
+                    p-6 sm:p-10 my-10"
+    >
       <div className="max-w-4xl mx-auto">
-
         {/* Questions */}
         <h1 className="text-2xl sm:text-3xl font-semibold text-gray-800 mb-8">
           {question.id}. {question.title}
@@ -44,34 +43,37 @@ function QuizComp() {
 
         {/* Buttons */}
         <div className="flex flex-wrap gap-4 justify-start">
-          <button onClick={()=>setIndex(index-1)}
-          disabled={index==0}
-           className="px-6 py-2 rounded-full bg-gray-300 
-                             hover:bg-gray-400 transition">
+          <button
+            onClick={() => setIndex((prev) => Math.max(prev - 1, 0))}
+            disabled={index === 0}
+            className="px-6 py-2 rounded-full bg-gray-300 hover:bg-gray-400 transition disabled:opacity-50 disabled:cursor-not-allowed"
+          >
             Prev
           </button>
 
           <div className="flex gap-4">
-            <button onClick={()=>setIndex(index+1)}
-            disabled={index >= question.length - 1}
-              className="px-6 py-2 rounded-full bg-blue-600 
-                               hover:bg-blue-700 text-white transition">
+            <button
+              onClick={() =>
+                setIndex((prev) => Math.min(prev + 1, quiz.length - 1))
+              }
+              disabled={index >= quiz.length - 1}
+              className="px-6 py-2 rounded-full bg-blue-600 hover:bg-blue-700 text-white transition disabled:opacity-50 disabled:cursor-not-allowed"
+            >
               Next
             </button>
 
-            {
-              question.length-1===index &&
-              <button className="px-6 py-2 rounded-full bg-green-600 
-                               hover:bg-green-700 text-white transition">
-              Submit Quiz
-            </button>
-            }
+            {index === quiz.length - 1 && (
+              <button
+              onClick={()=>setShowScreen('result')}
+              className="px-6 py-2 rounded-full bg-green-600 hover:bg-green-700 text-white transition">
+                Submit Quiz
+              </button>
+            )}
           </div>
         </div>
-
       </div>
     </div>
-  )
+  );
 }
 
-export default QuizComp
+export default QuizComp;
