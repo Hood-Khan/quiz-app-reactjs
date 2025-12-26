@@ -16,12 +16,14 @@
 
 import React from 'react'
 import WelcomeComp from './components/WelcomeComp'
+import QuizComp from './components/QuizComp'
 
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center 
+    <div className="min-h-screen flex items-center justify-center flex-col
                     bg-gradient-to-br from-amber-400 via-orange-300 to-yellow-200">
       <WelcomeComp />
+      <QuizComp />
     </div>
   )
 }
