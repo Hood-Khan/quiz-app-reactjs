@@ -6,7 +6,7 @@ function QuizComp({ setShowScreen, answers, setAnswers }) {
 
   
   const question = quiz[index];
-  const existAnswer = answers.find((cur) => cur.id == quiz.id);
+  const existAnswer = answers.find((cur) => cur.id == question.id);
 
   const addAnswer = (id, answer) => {
     const existAnswer = answers.find((cur) => cur.id == id);
@@ -49,7 +49,7 @@ function QuizComp({ setShowScreen, answers, setAnswers }) {
             >
               <input
                 type="radio"
-                name="answer"
+                name={`answer-${question.id}`}
                 checked={existAnswer && 
                   existAnswer.answer === i 
                 }
