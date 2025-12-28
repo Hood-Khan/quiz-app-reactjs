@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ResultComp({showScreen,setShowScreen}) {
+function ResultComp({showScreen,setShowScreen,answers,setAnswers}) {
 
 
 

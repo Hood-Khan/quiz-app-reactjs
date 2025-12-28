@@ -1,10 +1,28 @@
 import React, { useState } from "react";
 import quiz from "../api/quiz.json";
 
-function QuizComp({showScreen,setShowScreen}) {
+function QuizComp({ showScreen, setShowScreen, answers, setAnswers }) {
   const [index, setIndex] = useState(0);
 
+  
   const question = quiz[index];
+  const existAnswer = answers.find((cur, i) => cur.id == quiz.id);
+
+  const addAnswer = (id, answer) => {
+    const existAnswer = answers.find((cur, i) => cur.id == id);
+    if (existAnswer) {
+      const newAnswers = answers.map((cur, i) => {
+        if (cur.id == id) {
+          cur["answer"] = answer;
+        }
+        return cur;
+      });
+      setAnswers(newAnswers);
+      return;
+    }
+
+    setAnswers([...answers, { id, answer }]);
+  };
 
   return (
     <div
@@ -12,6 +30,7 @@ function QuizComp({showScreen,setShowScreen}) {
                     border border-white/40 rounded-2xl shadow-xl 
                     p-6 sm:p-10 my-10"
     >
+      <h1>{JSON.stringify(answers)}</h1>
       <div className="max-w-4xl mx-auto">
         {/* Questions */}
         <h1 className="text-2xl sm:text-3xl font-semibold text-gray-800 mb-8">
@@ -32,9 +51,13 @@ function QuizComp({showScreen,setShowScreen}) {
               <input
                 type="radio"
                 name="answer"
+                checked={existAnswer && 
+                  existAnswer.answer === i 
+                }
                 id={`${i + 1}`}
                 value={ans}
                 className="accent-green-600"
+                onChange={() => addAnswer(question.id, i)}
               />
               <span className="text-gray-800 text-lg">{ans}</span>
             </label>
@@ -64,8 +87,9 @@ function QuizComp({showScreen,setShowScreen}) {
 
             {index === quiz.length - 1 && (
               <button
-              onClick={()=>setShowScreen('result')}
-              className="px-6 py-2 rounded-full bg-green-600 hover:bg-green-700 text-white transition">
+                onClick={() => setShowScreen("result")}
+                className="px-6 py-2 rounded-full bg-green-600 hover:bg-green-700 text-white transition"
+              >
                 Submit Quiz
               </button>
             )}

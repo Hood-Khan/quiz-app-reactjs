@@ -6,6 +6,7 @@ import ResultComp from './components/ResultComp'
 function App() {
 
   const [showScreen,setShowScreen] = useState('welcome');
+  const [answers,setAnswers]=useState([]);
 
   return (
     <div className="min-h-screen flex items-center justify-center
@@ -20,11 +21,11 @@ function App() {
         </div>
 
         <div className="w-full">
-          {showScreen=='quiz' && <QuizComp {...{showScreen,setShowScreen}} />}
+          {showScreen=='quiz' && <QuizComp {...{showScreen,setShowScreen,answers,setAnswers}} />}
         </div>
 
         <div className="w-full">
-          {showScreen=='result' && <ResultComp {...{showScreen,setShowScreen}} />}
+          {showScreen=='result' && <ResultComp {...{showScreen,setShowScreen,answers,setAnswers}} />}
         </div>
 
       </div>
