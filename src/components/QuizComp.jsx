@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import quiz from "../api/quiz.json";
 
-function QuizComp({ showScreen, setShowScreen, answers, setAnswers }) {
+function QuizComp({ setShowScreen, answers, setAnswers }) {
   const [index, setIndex] = useState(0);
 
   
   const question = quiz[index];
-  const existAnswer = answers.find((cur, i) => cur.id == quiz.id);
+  const existAnswer = answers.find((cur) => cur.id == quiz.id);
 
   const addAnswer = (id, answer) => {
-    const existAnswer = answers.find((cur, i) => cur.id == id);
+    const existAnswer = answers.find((cur) => cur.id == id);
     if (existAnswer) {
-      const newAnswers = answers.map((cur, i) => {
+      const newAnswers = answers.map((cur) => {
         if (cur.id == id) {
           cur["answer"] = answer;
         }
@@ -30,7 +30,6 @@ function QuizComp({ showScreen, setShowScreen, answers, setAnswers }) {
                     border border-white/40 rounded-2xl shadow-xl 
                     p-6 sm:p-10 my-10"
     >
-      <h1>{JSON.stringify(answers)}</h1>
       <div className="max-w-4xl mx-auto">
         {/* Questions */}
         <h1 className="text-2xl sm:text-3xl font-semibold text-gray-800 mb-8">

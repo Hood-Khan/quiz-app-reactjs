@@ -5,12 +5,12 @@ function ResultComp({showScreen,setShowScreen,answers,setAnswers}) {
 
   const totalQuestions = quiz.length
   const attemptQuestions = answers.length
-  const totalCorrect = answers.length>0 ? answers.filter((cur,i)=>{
+  const totalCorrect = answers.length>0 ? answers.filter((cur)=>{
     const questions = quiz.find((c)=>c.id == cur.id)
     return questions.correct_option === cur.answer
   }) : []
 
-  const totalIncorrect = answers.length>0 ? answers.filter((cur,i)=>{
+  const totalIncorrect = answers.length>0 ? answers.filter((cur)=>{
     const questions = quiz.find((c)=>c.id == cur.id)
     return questions.correct_option !== cur.answer
   }) : []
@@ -44,7 +44,7 @@ function ResultComp({showScreen,setShowScreen,answers,setAnswers}) {
         </div>
 
         <button 
-        onClick={()=>setShowScreen('welcome')}
+        onClick={()=>window.location.reload()}
         className="px-10 py-3 bg-green-600 hover:bg-green-700 
                            text-white font-semibold rounded-full 
                            transition shadow-lg">
