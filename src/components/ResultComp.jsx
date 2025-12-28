@@ -14,6 +14,8 @@ function ResultComp({showScreen,setShowScreen,answers,setAnswers}) {
     const questions = quiz.find((c)=>c.id == cur.id)
     return questions.correct_option !== cur.answer
   }) : []
+
+  const percent = (totalCorrect.length/attemptQuestions)*100;
   
   return (
     <div className="w-full bg-white/30 backdrop-blur-lg 
@@ -24,6 +26,9 @@ function ResultComp({showScreen,setShowScreen,answers,setAnswers}) {
 
         <h1 className="text-4xl font-bold text-green-700 mb-8">
           🎉 You Scored {totalCorrect.length} / {totalQuestions}
+        </h1>
+        <h1 className="text-4xl font-bold text-green-700 mb-8">
+          Percentage: {percent}%
         </h1>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
