@@ -4,7 +4,7 @@ import quiz from '../api/quiz.json'
 function ResultComp({showScreen,setShowScreen,answers,setAnswers}) {
 
   const totalQuestions = quiz.length;
-  const attemptQuestions = answers.length;
+  // const attemptQuestions = answers.length;
 
   const totalCorrect =  answers.filter((cur)=>{
     const questions = quiz.find((c)=>c.id == cur.id)

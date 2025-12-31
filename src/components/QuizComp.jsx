@@ -11,12 +11,14 @@ function QuizComp({ setShowScreen, answers, setAnswers }) {
   const addAnswer = (id, answer) => {
     const existAnswer = answers.find((cur) => cur.id == id);
     if (existAnswer) {
+      // changing existing answer / options
       const newAnswers = answers.map((cur) => {
         if (cur.id == id) {
           cur["answer"] = answer;
         }
         return cur;
       });
+      
       setAnswers(newAnswers);
       return;
     }
@@ -32,6 +34,7 @@ function QuizComp({ setShowScreen, answers, setAnswers }) {
     >
       <div className="max-w-4xl mx-auto">
         {/* Questions */}
+        <p>{JSON.stringify(answers)}</p>
         <h1 className="text-2xl sm:text-3xl font-semibold text-gray-800 mb-8">
           {question.id}. {question.title}
         </h1>
